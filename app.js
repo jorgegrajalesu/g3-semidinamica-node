@@ -26,6 +26,12 @@ app.get('/no-sidebar', (req, res) => {
     res.sendFile(__dirname + '/public/no-sidebar.html' );
 
 })
+app.get('*', (req, res) => {
+    // el comidin o *, es para validar la busqueda de una pagina
+    // utilizar el res, para responder a la petición del usuario
+    res.sendFile(__dirname + '/public/404.html' );
+
+})
 
 
 
