@@ -1,7 +1,6 @@
+/* importar los paquetes como el express
+para crear un webserver en un entorno local
+*/
+const express = require('express');
 
 
-console.log('hola Nodejs');
-console.log('hola jorge');
-console.log('hola jorge');
-console.log('hola jorge');
-console.log('hola jorge');
