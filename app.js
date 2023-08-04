@@ -21,6 +21,11 @@ app.get('/right-sidebar', (req, res) => {
     res.sendFile(__dirname + '/public/right-sidebar.html' );
 
 })
+app.get('/no-sidebar', (req, res) => {
+    // utilizar el res, para responder a la petición del usuario
+    res.sendFile(__dirname + '/public/no-sidebar.html' );
+
+})
 
 
 
