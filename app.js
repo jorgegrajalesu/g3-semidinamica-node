@@ -4,7 +4,7 @@ para crear un webserver en un entorno local
 const express = require('express');
 // el webserver se le asigne al archivo app.js
 const app = express();
-const port = 9595;
+const port = 9596;
 
 // mostrar contenido de la carpeta public
 app.use(express.static('public'));
@@ -32,6 +32,10 @@ app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/404.html' );
 
 })
+// se necesita activar el puerto para el webserver 
+app.listen(port,() => {
+    console.log(`webserver activo en el puerto ${port}`)
+});
 
 
 
